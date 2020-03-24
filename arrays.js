@@ -10,14 +10,19 @@ function addElementToEndOfArray(array, element){
   return [...array, element]
 }
 function destructivelyAddElementToEndOfArray(array, element){
-  return array.push(element)
+  array.push(element)
+  return array
 }
 function accessElementInArray(array, index){
   return array[index]
 }
 function destructivelyRemoveElementFromBeginningOfArray(array, element){
-  return array.shift(element)
+  array.shift(element)
+  return array
 }
 function removeElementFromBeginningOfArray(array){
   return array.slice(1)
+}
+function destructivelyRemoveElementFromBeginningOfArray(array){
+  return array.pop()
 }
